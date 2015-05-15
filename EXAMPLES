@@ -1,0 +1,26 @@
+user% patchdb
+[PatchDB, version 1.4 - Copyright (c) 2013 Peter Eriksson <peter@ifm.liu.se>]
+*** Interactive mode ***
+PDB> ; List all equipment in room F F201
+PDB> room="F F201" list
+...  
+PDB> ; List all equipment starting with "sw0"
+PDB> list "sw0%"
+...
+PDB> ; List all ports on sw13432
+PDB> print sw13432
+...
+PDB> enable
+Enter password: HEMLIGT
+PDB# ; Relocate equipment to a new room
+PDB# relocate "F F203" sw13432 sw13434
+...
+PDB# ; Delete all patch cords attached to sw13999
+PDB# purge sw13999
+...
+PDB# ; Delete equipments sw13999 and sw13998
+PDB# delete sw13999 sw13998
+...
+PDB# ; Create an equipment unit with ports 1-24, A1 and A2, all of the type TP
+PDB# create sw13999 EQ "F F203" "Testswitch hos Peter" TP 1-24 A1 A2
+

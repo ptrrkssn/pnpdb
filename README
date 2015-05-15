@@ -1,0 +1,28 @@
+Peter's Network Patch Database
+
+Copyright (c) 2011-2015 Peter Eriksson <pen@lysator.liu.se>
+
+----------------------------------------------------------------------
+
+This program is free software; you can redistribute it and/or
+modify it as you wish - as long as you don't claim that you wrote
+it.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+----------------------------------------------------------------------
+
+INTRODUCTION
+
+PNPDB is both a web (CGI) frontend and a CLI tool interface for a
+network patch cable and ports/outlets database.
+
+It contains some hardcoded stuff to work nicely in our local enironment
+at the IFM department of Linköping University like ports/outlet naming
+standards/normalization that some day should be generalized a bit.
+
+Most of the IFM-specific stuff should be located in the file "ifm.c".
+
+- Peter
